@@ -2,7 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>PHP</title>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
   </head>
   <body>
          <!-- <h2>  Comments inside html </h2> -->
@@ -14,11 +31,20 @@
   $number1 = 10;
     echo " <p>  Variable 1 = 10 </p>";
 
-      //harcoded variable number 2 value of 5
-  $number2 = 5;
-    echo " <p>  Variable 2 = 5 </p>";
+      //harcoded variable number 2 value of 6
+  $number2 = 6;
+    echo " <p>  Variable 2 = 6 </p>
+
+   &#36;additon = &#36;number1 + &#36;number2;
+  <br>
+
+     ";
+
+
+    // ---OPERATIONS---↓
+
 //Addition operation
-    $sum = $number1+$number2;
+    $additon = $number1+$number2;
 
 //multiplication operation
         $multiplication = $number1*$number2;
@@ -27,7 +53,13 @@
     $substraction = $number1-$number2;
 // Division operation
 
-  $multiplication = $number1/$number2;
+  $division = $number1/$number2;
+
+  // Division operation
+
+    $modulo = $number1%$number2;
+
+
      ?>
      <h3> Math  </h3>
      <table>
@@ -35,7 +67,7 @@
           <th>Operation</th>
          <th>Number1</th>
          <th>Number2</th>
-         <th>Total</th>
+         <th> RESULT </th>
        </tr>
        <tr>  <?php
 
@@ -43,7 +75,7 @@
            <td>  Addition</td>
            <td>  $number1</td>
            <td>  $number2</td>
-           <td>  $sum</td>";
+           <td>  $additon</td>";
 
                 ?>
 
@@ -52,7 +84,7 @@
          <?php
 
             echo "
-            <td>  Subs</td>
+            <td>  Substraction</td>
             <td>  $number1</td>
             <td>  $number2</td>
             <td>  $substraction</td>";
@@ -63,46 +95,41 @@
          <?php
 
             echo "
-            <td>  Addition</td>
+            <td>  Multiplication</td>
             <td>  $number1</td>
             <td>  $number2</td>
-            <td>  $sum</td>";
+            <td>  $multiplication</td>";
 
                  ?>
+       </tr>
+                 <?php
+                       echo "
+       <tr>
+
+
+
+            <td>  Division</td>
+            <td>  $number1</td>
+            <td>  $number2</td>
+            <td>  $division</td>
+
+
        </tr>
        <tr>
-         <?php
 
-            echo "
-            <td>  Addition</td>
+
+
+            <td>  Remainder</td>
             <td>  $number1</td>
             <td>  $number2</td>
-            <td>  $sum</td>";
+            <td>  $modulo</td>
 
-                 ?>
+
        </tr>
-       <tr>
-         <?php
 
-            echo "
-            <td>  Addition</td>
-            <td>  $number1</td>
-            <td>  $number2</td>
-            <td>  $sum</td>";
 
-                 ?>
-       </tr>
-       <tr>
-         <?php
+       ";?>
 
-            echo "
-            <td>  Addition</td>
-            <td>  $number1</td>
-            <td>  $number2</td>
-            <td>  $sum</td>";
-
-                 ?>
-       </tr>
      </table>
 
   </body>
