@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title> 🐣 Sequence Functions 🐣</title>
+    <title> 🐣 Functions 🐣</title>
   <!-- style -->
     <style>
       table {
@@ -36,38 +36,59 @@
     $world = "World";
       echo " <p>  Variable 2 =   $world </p> ";
 
-// the function ten numbers
-      function sequenceTenNumbers (){
-        for ($i = 0; $i <= 10; $i++) {
-          echo " $i ,";
-        }
+// the function
+      function sayHelloWorld ($hello, $world){
+        // the function will print the phrase with the space between words
+          echo "$hello $world";
       }
 
-      function sequencepar (){
-        for ($i = 0; $i <= 10; $i+=2) {
-          echo " $i ,";
-        }
-      }
+
+
+
+
+    $result =0;
+
 
      ?>
      <table>
+
    <tr>
      <th>Result</th>
    </tr>
    <tr>
      <td>
     <!-- opening phph to call the function -->
-          <?php  sequenceTenNumbers ();
-          echo "<br>";
-        sequencepar ();
-        sequenceNumber ();
-        ?>
-
+          <?php  sayHelloWorld ($hello, $world);   ?>
     </td>
+
    </tr>
    <tr>
 
+
    </table>
+
+    <!-- // -↓  Only for HTML preview -↓ -->
+     <table>
+   <tr>
+     <th>CODE</th>
+   </tr>
+   <tr>
+     <td>
+         function sayHelloWorld ($hello, $world){<br>
+          echo "$hello $world"; <br>
+         }<br>
+
+     sayHelloWorld ($hello);<br>
+
+</td>
+
+   </tr>
+   <tr>
+
+
+   </table>
+
+
 
 
 
