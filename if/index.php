@@ -122,7 +122,17 @@ tr:nth-child(even) {
 
 
        </tr>
+     <tr>
 
+
+
+            <td>  Remainder</td>
+            <td>  $number1</td>
+            <td>  $number2</td>
+            <td>  $modulo</td>
+
+
+       </tr>
 
        ";?>
 
